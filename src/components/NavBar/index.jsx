@@ -8,18 +8,18 @@ export const NavBar = () => {
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <Link to={"/"}>
           <span className="font-semibold text-xl tracking-tight">
-            Dummy Shop
+            Aromatic Bliss
           </span>
         </Link>
         <ul className="flex flex-row gap-6 px-6">
           <li>
-            <Link to={"/category/1"}>Categoría 1</Link>
+            <Link to={"/category/women"}>Women</Link>
           </li>
           <li>
-            <Link to={"/category/2"}>Categoría 1</Link>
+            <Link to={"/category/men"}>Men</Link>
           </li>
           <li>
-            <Link to={"/category/3"}>Categoría 1</Link>
+            <Link to={"/category/unisex"}>Unisex</Link>
           </li>
         </ul>
       </div>

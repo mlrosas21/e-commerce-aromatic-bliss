@@ -1,14 +1,16 @@
-import React from 'react'
-import {useParams} from 'react-router-dom'
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { perfumeService } from "../../services/perfumes";
+import { ItemList } from "../ItemList";
 
-export const ItemListContainer = ({greeting}) => {
-  
-  let {id} = useParams()
+export const ItemListContainer = ({ greeting }) => {
+  const [items, setItems] = useState([]);
+  const { id } = useParams();
 
-  return (
-    <section className='w-full p-24 bg-slate-300 text-5xl'>
-        <h1 className='uppercase'>{greeting}</h1>
-        <p>{id}</p>
-    </section>
-  )
-}
+  useEffect(() => {
+    let arrayProductos = id ? perfumeService.getCategory(id) : perfumeService.getAll()
+    arrayProductos.then((data) => setItems(data))
+  }, [id]);
+
+  return <ItemList items={items} />;
+};
