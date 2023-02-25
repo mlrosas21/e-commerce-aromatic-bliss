@@ -6,3 +6,5 @@ export { ItemList } from "./ItemList";
 export { ItemDetail } from "./ItemDetail";
 export { ItemDetailContainer } from "./ItemDetailContainer";
 export { Cart } from "./Cart";
+export { Button } from "./Button"
+export { Footer } from "./Footer"

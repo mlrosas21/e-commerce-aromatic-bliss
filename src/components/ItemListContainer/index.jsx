@@ -12,5 +12,9 @@ export const ItemListContainer = ({ greeting }) => {
     arrayProductos.then((data) => setItems(data))
   }, [id]);
 
+  if(items.length === 0){
+    return(<h2> No results. </h2> )
+  }
+
   return <ItemList items={items} />;
 };
