@@ -20,12 +20,12 @@ export const Item = ({ item }) => {
           <CardMedia
             component="img"
             className="mx-auto my-4"
-            src={item.pictureUrl}
+            src={item.image}
             sx={{ height: 250, width: 200, alignSelf: "Center" }}
             />
         </CardActionArea>
         <Typography variant="h5" component="div">
-          {item.name} - {item.brand}
+          {item.title} - {item.brand}
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
           USD {item.price}
