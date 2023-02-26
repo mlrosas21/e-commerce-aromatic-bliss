@@ -8,3 +8,5 @@ export { ItemDetailContainer } from "./ItemDetailContainer";
 export { Cart } from "./Cart";
 export { Button } from "./Button"
 export { Footer } from "./Footer"
+export { CartItem } from './CartItem'
+export { CartContainer } from './CartContainer'
