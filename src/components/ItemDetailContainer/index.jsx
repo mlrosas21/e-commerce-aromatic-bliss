@@ -12,8 +12,6 @@ export const ItemDetailContainer = () => {
   const { id } = useParams();
   const { removeItem, addItem } = useContext(CartContext);
 
-  console.log(addItem);
-
   useEffect(() => {
     setLoading(true);
     let item = perfumeService.get(id);

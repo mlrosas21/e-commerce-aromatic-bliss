@@ -22,7 +22,7 @@ export const ItemDetail = ({item, addItem, removeItem}) => {
         <p>{item.description}</p>
       </div>
       <div className="lg:row-span-1 lg:col-start-2 lg:row-start-3 md:col-start-1 md:row-start-4 md:col-span-2 py-4">
-        <Button action={() => addItem(item)}/>
+        <Button text="Agregar al carrito" action={() => addItem(item)}/>
       </div>
     </div>
   )
