@@ -9,3 +9,4 @@ export { Cart } from "./Cart";
 export { Button } from "./Button"
 export { Footer } from "./Footer"
 export { CartItem } from './CartItem'
+export { Success } from './Success'

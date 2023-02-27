@@ -1,4 +1,4 @@
-import { getFirestore, doc, getDoc, collection, getDocs, query, where } from "firebase/firestore";
+import { getFirestore, doc, getDoc, collection, getDocs, query, where, addDoc} from "firebase/firestore";
 
 // With JSON mock
 // const getAll = () => {
@@ -50,4 +50,21 @@ const getCategory = async (id) => {
   
 };
 
-export const perfumeService = { getAll, get, getCategory };
+// FIREBASE
+const sendOrder = async (cart, total, date) => {
+  const order = {
+    buyer:{name: "Martin", lastname: "Rosas", email: "martinrosasortmann@gmail.com"},
+    items: cart,
+    total: total,
+    date: date
+  }
+
+  console.log(order);
+
+  const db = getFirestore()
+  const ordersCollection = collection(db, "orders")
+  const resp = await addDoc(ordersCollection, order)
+  return resp
+}
+
+export const perfumeService = { getAll, get, getCategory, sendOrder };
