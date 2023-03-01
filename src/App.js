@@ -1,8 +1,11 @@
 import "./App.css";
 
-import { ItemDetailContainer, ItemListContainer, NavBar, Cart, Footer, Success } from "./components";
+import { ItemDetailContainer, ItemListContainer, NavBar, Cart, Footer} from "./components";
+import { Success, Checkout } from './pages'
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
+
+
 
 function App() {
   return (
@@ -14,7 +17,7 @@ function App() {
             <Route path={"/"} element={<ItemListContainer />} />
             <Route path={"/category/:id"} element={<ItemListContainer />} />
             <Route path={"/item/:id"} element={<ItemDetailContainer />} />
-            <Route path={"/cart"} element={<Cart/>}/>
+            <Route path={"/checkout"} element={<Checkout/>}/>
             <Route path={"/success"} element={<Success/>}/>
           </Routes>
           <Footer/>

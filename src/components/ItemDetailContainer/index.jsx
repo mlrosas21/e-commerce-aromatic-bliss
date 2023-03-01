@@ -8,9 +8,10 @@ import Box from "@mui/material/Box";
 
 export const ItemDetailContainer = () => {
   const [item, setItem] = useState({});
+
   const [loading, setLoading] = useState(true);
   const { id } = useParams();
-  const { removeItem, addItem } = useContext(CartContext);
+  const { addItem } = useContext(CartContext);
 
   useEffect(() => {
     setLoading(true);
@@ -25,7 +26,7 @@ export const ItemDetailContainer = () => {
   return (
     <>
       {!loading && (
-        <ItemDetail key={item.id} item={item} addItem={addItem} removeItem={removeItem} />
+        <ItemDetail key={item.id} item={item} addItem={addItem} createProd={perfumeService.createProd} />
       )}
 
       {loading && (

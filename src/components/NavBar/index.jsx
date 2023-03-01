@@ -7,18 +7,18 @@ export const NavBar = () => {
     <nav className="mb-6 flex flex-row items-center justify-between flex-wrap bg-gradient-to-r from-cyan-500 to-indigo-500 p-6 shadow-md">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <Link to={"/"}>
-          <span className="font-semibold text-xl tracking-tight">
+          <span className="font-semibold text-2xl tracking-tight">
             Aromatic Bliss
           </span>
         </Link>
-        <ul className="flex flex-row gap-6 px-6">
-          <li>
+        <ul className="flex flex-row gap-6 px-6 ml-8">
+          <li className="text-xl">
             <Link to={"/category/women"}>Women</Link>
           </li>
-          <li>
+          <li className="text-xl">
             <Link to={"/category/men"}>Men</Link>
           </li>
-          <li>
+          <li className="text-xl">
             <Link to={"/category/unisex"}>Unisex</Link>
           </li>
         </ul>

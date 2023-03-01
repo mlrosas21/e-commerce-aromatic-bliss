@@ -2,7 +2,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-neutral-200 text-center text-white dark:bg-neutral-600 bg-gradient-to-r from-cyan-500 to-indigo-500 p-6 shadow-md">
+    <footer className="bg-neutral-200 text-center text-white dark:bg-neutral-600 bg-gradient-to-r from-cyan-500 to-indigo-500 p-6 shadow-md  ">
       <div className="container p-3 flex justify-between">
         <div className="">
           © 2023 Copyright - Martín Rosas

@@ -9,7 +9,7 @@ export const CartWidget = () => {
   const {cart, getTotalItems} = useContext(CartContext)
   
   return (
-    <Link to={"/cart"}>
+    <Link to={"/checkout"}>
     <Badge badgeContent={getTotalItems()} color='secondary'>
         <ShoppingCartIcon style={{ color: '#fff' }} fontSize="medium" />
     </Badge>

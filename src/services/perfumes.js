@@ -67,4 +67,11 @@ const sendOrder = async (cart, total, date) => {
   return resp
 }
 
-export const perfumeService = { getAll, get, getCategory, sendOrder };
+const createProd = async(prod) => {
+  const db = getFirestore()
+  const ordersCollection = collection(db, "perfumes")
+  const resp = await addDoc(ordersCollection, prod)
+  return resp
+}
+
+export const perfumeService = { getAll, get, getCategory, sendOrder, createProd };

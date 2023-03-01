@@ -61,25 +61,25 @@ export const perfumes = [
   },
   {
     id: 6,
-    name: "Black Xs",
+    title: "Black Xs",
     category: 'men',
     brand: "Paco Rabanne",
     description:
       "Pure XS by Paco Rabanne is a Aromatic Spicy fragrance for men. Pure XS was launched in 2017. Pure XS was created by Anne Flipo, Caroline Dumur and Bruno Jovanovic. Top notes are Ginger, Thyme, Grapefruit, Bergamot and Green Accord; middle notes are Vanilla, Liquor, Cinnamon, Leather and Apple; base notes are Myrrh, Sugar, Cedar, Woody Notes, Cashmeran and Patchouli.",
     price: 95,
-    pictureUrl: "https://fimgs.net/mdimg/perfume/375x500.46038.jpg",
+    image: "https://fimgs.net/mdimg/perfume/375x500.46038.jpg",
     volume: "100ml",
     olfactiveFamily: ["vanilla", "sweet", "woody"]
   },
   {
     id: 7,
-    name: "Ck One",
+    title: "Ck One",
     category: 'unisex',
     brand: "Calvin Klein",
     description:
       "Pure XS by Paco Rabanne is a Aromatic Spicy fragrance for men. Pure XS was launched in 2017. Pure XS was created by Anne Flipo, Caroline Dumur and Bruno Jovanovic. Top notes are Ginger, Thyme, Grapefruit, Bergamot and Green Accord; middle notes are Vanilla, Liquor, Cinnamon, Leather and Apple; base notes are Myrrh, Sugar, Cedar, Woody Notes, Cashmeran and Patchouli.",
     price: 95,
-    pictureUrl: "https://fimgs.net/mdimg/perfume/375x500.276.jpg",
+    image: "https://fimgs.net/mdimg/perfume/375x500.276.jpg",
     volume: "100ml",
     olfactiveFamily: ["citrus", "green", "woody"]
   }
