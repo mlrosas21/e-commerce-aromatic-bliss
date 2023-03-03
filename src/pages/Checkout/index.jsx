@@ -1,39 +1,21 @@
-import React, { useContext, useState } from "react";
-import { UserInfo } from "../../components";
-import { Cart, Button } from "../../components/";
+import { Cart, UserInfo } from "../../components";
 import { CartContext } from "../../context/CartContext";
-import { perfumeService } from "../../services/perfumes";
-import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
 
 export const Checkout = () => {
-  const { cart, getTotalItems, cleanCart, getTotalPrice } =
-    useContext(CartContext);
 
-    const [user, setUser] = useState()
-
-  const handleSubmitOrder = (cart, total, date) => {
-    perfumeService.sendOrder(cart, total, date).then(() => {
-      cleanCart();
-      navigate("/success");
-    });
-  };
-
-  const navigate = useNavigate();
+  const { cart } = useContext(CartContext);
 
   return (
     <>
-      <div className="grid grid-cols-2 px-16 ">
+      {cart.length > 0 ? (
+      <div className="grid lg:grid-cols-2 px-16 grid-cols-1 ">
         <Cart />
         <UserInfo />
       </div>
-      {getTotalItems() > 0 && (
-        <div>
-          <Button
-            action={() => handleSubmitOrder(cart, getTotalPrice(), new Date())}
-            text="Finalizar compra"
-          />
-        </div>
-      )}
+
+      ) : <h2 className="text-3xl">Tu carrito está vacío</h2>}
+      
     </>
   );
 };

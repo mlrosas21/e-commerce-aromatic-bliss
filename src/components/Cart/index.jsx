@@ -15,7 +15,7 @@ export const Cart = () => {
       {!loading && (
         <div className="px-6">
           <h2 className="text-xl">Tu Carrito - {getTotalItems()} items</h2>
-          {cart.length === 0 ? <p>No items in cart.</p> : null}
+          
           {cart.map((item) => (
             <CartItem
               key={item.id}

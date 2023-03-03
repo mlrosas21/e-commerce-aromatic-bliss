@@ -8,21 +8,20 @@ import { ItemQuantitySelector } from "../ItemQuantitySelector";
 
 export const ItemDetail = ({ item, addItem }) => {
   const [open, setOpen] = useState(false);
-  const [isInCart, setIsInCart] = useState(false)
+  const [isInCart, setIsInCart] = useState(false);
 
   const { cart, getItem } = useContext(CartContext);
 
   useEffect(() => {
-    if(cart.findIndex(e => e.id === item.id) !== -1){
-      setIsInCart(true)
+    if (cart.findIndex((e) => e.id === item.id) !== -1) {
+      setIsInCart(true);
     } else {
-      setIsInCart(false)
+      setIsInCart(false);
     }
-  }, [cart, item])
-  
+  }, [cart, item]);
 
   const handleAddItem = () => {
-    item.amount = 1
+    item.amount = 1;
     addItem(item);
     setOpen(true);
   };
@@ -42,7 +41,7 @@ export const ItemDetail = ({ item, addItem }) => {
         autoHideDuration={4000}
         onClose={handleClose}
         message="¡Producto agregado al carrito!"
-        anchorOrigin={{ vertical: "top", horizontal: "right" }}
+        anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
       />
 
       <div className="flex row-span-3 md:row-span-3 sm:col-span-1 sm:row-span-3 row-span-3 justify-center ">
@@ -70,10 +69,7 @@ export const ItemDetail = ({ item, addItem }) => {
           <Button text="Agregar al carrito" action={handleAddItem} />
         )}
 
-        {isInCart && (
-          <ItemQuantitySelector item={getItem(item.id)}/>
-        )}
-
+        {isInCart && <ItemQuantitySelector item={getItem(item.id)} />}
       </div>
     </div>
   );

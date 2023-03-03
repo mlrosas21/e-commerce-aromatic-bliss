@@ -51,9 +51,9 @@ const getCategory = async (id) => {
 };
 
 // FIREBASE
-const sendOrder = async (cart, total, date) => {
+const sendOrder = async (user, cart, total, date) => {
   const order = {
-    buyer:{name: "Martin", lastname: "Rosas", email: "martinrosasortmann@gmail.com"},
+    buyer: user,
     items: cart,
     total: total,
     date: date

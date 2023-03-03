@@ -1,8 +1,8 @@
 import { Button as MuiButton } from '@mui/material'
 import React from 'react'
 
-export const Button = ({action, text}) => {
+export const Button = ({action, text, type}) => {
   return (
-    <MuiButton variant="contained" onClick={action}>{text}</MuiButton>
+    <MuiButton variant="contained" type={type} onClick={action}>{text}</MuiButton>
   )
 }
