@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Aromatic bliss (E-commerce React app)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description/Descripción
 
-## Available Scripts
+E-commerce application that allows you to create a perfume shopping cart, add and delete them. Upon completion of the order, the information is stored in a database and the purchase is recorded.
 
-In the project directory, you can run:
+/
 
-### `npm start`
+Aplicación de e-commerce que permite crear un carrito de compras de perfumes, agregar y eliminarlos. Al terminar la orden, se guarda la información en una base de datos y la compra queda registrada. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Dependencies / Dependencias
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Application created from create-react-app, with all its dependencies. In addition, they were used:
+Component library: 
+- material ui
+CSS library: 
+- tailwind-css
+Database: 
+- Cloud Firestore
 
-### `npm test`
+Other packages:
+-react-hook-form
+-react-router-dom
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+/
 
-### `npm run build`
+Aplicación creada a partir de create-react-app, con todas sus dependencias. Además, se utilizaron:
+Librería de componentes:
+- material ui
+Librería CSS:
+- tailwind-css
+Base de datos: 
+- Cloud Firestore
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Paquetes varios:
+- react-hook-form
+- react-router-dom
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Details / Detalles
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+It was sought to use the approach of container and presentation components. The handling of information within the app was done through the use of context, native to React
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Se busco utilizar el enfoque de componentes contenedores y de presentación. El manejo de información dentro de la app se hizo mediante el uso de context, nativo de React
