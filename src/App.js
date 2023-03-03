@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { ItemDetailContainer, ItemListContainer, NavBar, Cart, Footer} from "./components";
+import { ItemDetailContainer, ItemListContainer, NavBar, Footer} from "./components";
 import { Success, Checkout } from './pages'
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
