@@ -11,12 +11,9 @@ Aplicación de e-commerce que permite crear un carrito de compras de perfumes, a
 ### Dependencies / Dependencias
 
 Application created from create-react-app, with all its dependencies. In addition, they were used:
-Component library: 
-- material ui
-CSS library: 
-- tailwind-css
-Database: 
-- Cloud Firestore
+- Component library: material ui
+- CSS library: tailwind-css
+- Database: Cloud Firestore
 
 Other packages:
 -react-hook-form
@@ -25,12 +22,10 @@ Other packages:
 /
 
 Aplicación creada a partir de create-react-app, con todas sus dependencias. Además, se utilizaron:
-Librería de componentes:
-- material ui
-Librería CSS:
-- tailwind-css
-Base de datos: 
-- Cloud Firestore
+
+- Librería de componentes: material ui
+- Librería CSS: tailwind-css
+- Base de datos: Cloud Firestore
 
 Paquetes varios:
 - react-hook-form
